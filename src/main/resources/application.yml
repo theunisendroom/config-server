@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: Config
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://coderepo.ooba.co.za:7990/scm/oob/ooba-configurations.git
+          clone-on-start: true
+          username: java_development
+          password: JavaD#v!l(666)
+          basedir: /app/share/configurations
+          force-pull: true
+server.port: 8888
